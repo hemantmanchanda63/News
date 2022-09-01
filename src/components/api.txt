@@ -1,0 +1,3 @@
+API Key of News App
+
+Key: 6d5e65ee1d474d70b896bb88e1c4148c
