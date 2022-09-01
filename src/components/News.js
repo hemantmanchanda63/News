@@ -1648,6 +1648,9 @@ const News = () => {
         <h1 className="mb-3">News Headlines</h1>
         <div className="row">
             {articles.map((item) => {
+
+
+
               return (
                 <div className="col-md-4">
                 <Newsitem
