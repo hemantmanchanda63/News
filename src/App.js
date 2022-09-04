@@ -3,13 +3,15 @@ import logo from "./logo.svg";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
+import Apidata from "./components/Apidata";
 
 
 const App = () => {
   return (
     <>
       <Navbar />
-      <News />
+      {/* <News /> */}
+      <Apidata /> 
     </>
   );
 };

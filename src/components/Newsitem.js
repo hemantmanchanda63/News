@@ -12,6 +12,7 @@ const Newsitem = (props) => {
           <a href="/" className="btn btn-primary btn-xl">
             Go somewhere
           </a>
+          
         </div>
       </div>
     </>
