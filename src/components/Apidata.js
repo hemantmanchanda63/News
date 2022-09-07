@@ -1,16 +1,18 @@
 import React, { useState, useEffect } from "react";
+import axios from "axios";
 
 const Apidata = () => {
   const [data, setdata] = useState([])
+  const url="https://data.covid19india.org/data.json";
   const getdata = async () => {
-    const response = await fetch("https://data.covid19india.org/data.json");
-    const data1 = await response.json();
-    // console.log("datas", data1);  
-    setdata(data1.statewise)
+    const response= await axios.get(url)
+      // console.log("datas", response.data.statewise);  
+      setdata(response.data.statewise)
+
   };
   useEffect(() => {
     getdata();
-  }, []);
+  }, [data]);
 
   // const hell = () => {
   //   setcount(count + 1);
