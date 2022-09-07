@@ -4,6 +4,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import Apidata from "./components/Apidata";
+import PokeApi from "./components/PokeApi";
 import {
   BrowserRouter as Router,
   Route,
@@ -23,6 +24,9 @@ const App = () => {
      <Route exact
             path="/covid19"
             element={<Apidata />}/>
+          <Route exact
+            path="/apidata"
+            element={<PokeApi />}/>
     </Routes>
     </Router>
       {/* <News /> */}

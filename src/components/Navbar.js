@@ -34,6 +34,11 @@ const Navbar = () => {
                   <Link className="nav-link" to="/covid19">
                     Covid Cases
                   </Link>
+                  </li>
+                <li className="nav-item">
+                  <Link className="nav-link" to="/apidata">
+                    PokeAPI
+                  </Link>
                 </li>
               </ul>
             </div>
