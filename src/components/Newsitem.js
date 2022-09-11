@@ -1,7 +1,8 @@
 import React from "react";
+import {Link} from "react-router-dom"
 
 const Newsitem = (props) => {
-  const { title, description, imgurl } = props;
+  const { title, description, imgurl, url } = props;
   return (
     <>
       <div className="card mb-3" style={{ width: "18rem" }}>
@@ -9,12 +10,12 @@ const Newsitem = (props) => {
         <div className="card-body">
           <h5 className="card-title">{title}</h5>
           <p className="card-text">{description}</p>
-          <a href="/" className="btn btn-primary btn-xl">
-            Go somewhere
+          <a href={url}  target="_blank" className="btn btn-primary btn-xl">
+            Read More
           </a>
-          
         </div>
       </div>
+
     </>
   );
 };
